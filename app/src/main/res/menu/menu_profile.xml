@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".profile"
+    >
+<item
+    android:id="@+id/t_table"
+    android:orderInCategory="100"
+    android:title="@string/t_table"
+    app:showAsAction="never">
+    </item>
+    <item
+        android:id="@+id/news"
+        android:orderInCategory="100"
+        android:title="@string/news"
+        app:showAsAction="never">
+    </item>
+    <item
+        android:id="@+id/out"
+        android:orderInCategory="100"
+        android:title="@string/out"
+        app:showAsAction="never">
+    </item>
+</menu>

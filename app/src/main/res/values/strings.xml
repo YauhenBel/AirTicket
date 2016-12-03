@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">AirTicket</string>
+    <string name="once">Name</string>
+    <string name="button">Click</string>
+    <string name="surname">Surname</string>
+    <string name="title_activity_profile">profile</string>
+    <string name="login">Логин</string>
+    <string name="input">Войти</string>
+    <string name="password">Пароль</string>
+    <string name="profile">Профиль</string>
+    <string name="d_of_birth">Дата рождения</string>
+    <string name="name">Имя</string>
+    <string name="surname1">Фамилия</string>
+    <string name="setting">setting</string>
+    <string name="t_table">Расписание</string>
+    <string name="news">Новости</string>
+    <string name="out">Выход</string>
+    <string name="autorise">Авторизация</string>
+</resources>
