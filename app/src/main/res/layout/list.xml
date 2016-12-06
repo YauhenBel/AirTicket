@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="Откуда"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dest" />
+
+    <TextView
+        android:text="Куда"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/point_of_dest" />
+
+    <TextView
+        android:text="Дата"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/date" />
+
+    <TextView
+        android:text="Стоимость"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cost_table" />
+
+    <TextView
+        android:text="Номер рейса"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_fly" />
+
+</LinearLayout>

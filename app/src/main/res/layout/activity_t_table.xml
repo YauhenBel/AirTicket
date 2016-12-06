@@ -10,4 +10,79 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.genya.myapplication.t_table">
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="140dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="120dp">
+
+        <TextView
+            android:text="Пункт отправления"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView7"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:text="Пункт прибытия"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView8"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:text="Дата отправления"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView9"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:id="@+id/list_view_tables"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true">
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/s_depart"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/s_ariv"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="10dp" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/s_d_depart"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp" />
+
+    </LinearLayout>
 </RelativeLayout>
