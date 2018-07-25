@@ -11,6 +11,24 @@
         app:showAsAction="never">
     </item>
     <item
+        android:id="@+id/info_air"
+        android:orderInCategory="100"
+        android:title="@string/info"
+        app:showAsAction="never">
+    </item>
+    <item
+        android:id="@+id/information"
+        android:orderInCategory="100"
+        android:title="@string/information"
+        app:showAsAction="never">
+    </item>
+    <item
+        android:id="@+id/info_prog"
+        android:orderInCategory="100"
+        android:title="@string/info_program"
+        app:showAsAction="never">
+    </item>
+    <item
         android:id="@+id/out"
         android:orderInCategory="100"
         android:title="@string/out"

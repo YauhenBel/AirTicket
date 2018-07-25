@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_info_air"
+    android:layout_width="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.genya.myapplication.info_air"
+    android:orientation="vertical"
+    app:layout_collapseParallaxMultiplier="1.0"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView12"
+        android:textSize="22sp"
+        android:elevation="1dp"
+        android:textAlignment="center"
+        android:text="ВВЕДИТЕ НОМЕР РЕЙСА" />
+
+    <EditText
+        android:layout_width="87dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center" />
+
+    <Button
+        android:text="НАЙТИ"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:textSize="18sp"
+        android:focusable="false"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:onClick="click_btn"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_height="370dp"
+        android:layout_weight="0.10">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="319dp">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:orientation="vertical" android:layout_width="match_parent"
+                android:weightSum="1"
+                android:layout_height="450dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:background="#caffc0"
+                    android:layout_height="145dp">
+
+                    <TextView
+                        android:text="Отправление"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView9"
+                        android:textAlignment="center"
+                        android:layout_marginTop="10dp"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:text="Откуда"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:id="@+id/p_of_dep"
+                        android:layout_marginTop="15dp" />
+
+                    <TextView
+                        android:text="дата"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:id="@+id/date"
+                        android:layout_marginTop="15dp" />
+
+                    <TextView
+                        android:text="Время"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/p_time"
+                        android:textAllCaps="false"
+                        android:textAlignment="center"
+                        android:layout_marginTop="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:background="#ff9ba1"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.08"
+                    android:layout_height="145dp">
+
+                    <TextView
+                        android:text="Прибытие"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView23"
+                        android:textAlignment="center"
+                        android:layout_marginTop="10dp"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:text="Куда"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/dest"
+                        android:textAlignment="center"
+                        android:layout_marginTop="15dp" />
+
+                    <TextView
+                        android:text="Дата"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/dest_date"
+                        android:textAlignment="center"
+                        android:layout_marginTop="15dp" />
+
+                    <TextView
+                        android:text="Время"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/dest_time"
+                        android:textAlignment="center"
+                        android:layout_marginTop="15dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:text="Стоимость одного билета"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView30"
+                    android:textSize="18sp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="20dp" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/RG">
+
+
+                        <RadioButton
+                            android:text="Бизнес"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:id="@+id/radio_byn" />
+
+                        <RadioButton
+                            android:text="Эконом"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:id="@+id/radio_usd" />
+
+                        <RadioButton
+                            android:text="Первый"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:id="@+id/radio_eur" />
+
+                    </RadioGroup>
+                </LinearLayout>
+
+                <TextView
+                    android:text="Стоимость"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cost_tick"
+                    android:gravity="center" />
+
+                <TextView
+                    android:text="Количество мест"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView17"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:textSize="18sp" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <TextView
+                            android:text="Бизнес-класс:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView11" />
+
+                        <TextView
+                            android:text="TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:id="@+id/col_bui" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <TextView
+                            android:text="Эконом-класс:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView14" />
+
+                        <TextView
+                            android:text="TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:id="@+id/col_eco" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <TextView
+                            android:text="Первый-класс:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView16" />
+
+                        <TextView
+                            android:text="TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:id="@+id/col_firs" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </TableLayout>
+
+                <TextView
+                    android:text="Бронирование"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView33"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:layout_marginTop="20dp" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/s_class"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Количество"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView20"
+                        android:layout_weight="0.73"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="1"
+                        android:id="@+id/edit_col"
+                        android:layout_weight="0.72" />
+
+                </LinearLayout>
+
+                <Button
+                    android:text="Забронировать"
+                    android:layout_width="231dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/buy"
+                    android:onClick="buy"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp" />
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

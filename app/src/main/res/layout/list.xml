@@ -1,35 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <TextView
-        android:text="Откуда"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/dest" />
 
-    <TextView
-        android:text="Куда"
+    <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/point_of_dest" />
+        android:layout_height="match_parent">
 
-    <TextView
-        android:text="Дата"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/date" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
 
-    <TextView
-        android:text="Стоимость"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/cost_table" />
+            <TextView
+                android:text="Откуда: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView6" />
 
-    <TextView
-        android:text="Номер рейса"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/id_fly" />
+            <TextView
+                android:text="Откуда"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dest"
+                android:layout_marginLeft="20dp" />
 
-</LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:text="Куда: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3" />
+            <TextView
+                android:text="Куда"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/point_of_dest"
+                android:layout_marginLeft="20dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:text="Дата: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2" />
+            <TextView
+                android:text="Дата"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/date"
+                android:layout_marginLeft="20dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:text="Стоимость: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4" />
+            <TextView
+                android:text="Стоимость"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cost_table"
+                android:layout_marginLeft="20dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:text="Номер рейса: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView5" />
+            <TextView
+                android:text="Номер рейса"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/id_fly"
+                android:layout_marginLeft="20dp" />
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

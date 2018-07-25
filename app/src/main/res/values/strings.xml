@@ -16,4 +16,20 @@
     <string name="news">Новости</string>
     <string name="out">Выход</string>
     <string name="autorise">Авторизация</string>
+    <string name="info">Подробно</string>
+    <string name="info_air">Подробная информация</string>
+    <string name="register">Регистрация</string>
+    <string name="title_activity_info_air">info_air</string>
+    <string name="date_b">Дата рождения</string>
+    <string name="date_otprav">Дата отправления</string>
+    <string name="passw1">Повторите пароль</string>
+    <string name="зфыыц">Пароль</string>
+    <string name="pass">Пароль</string>
+    <string name="information">Справка</string>
+    <string name="info_program">О программе</string>
+    <string name="ab_th_prog">О программе</string>
+    <string name="spravka">Справка</string>
+    <string name="bron">Бронирование билетов</string>
+    <string name="info_bron">Билеты успешно забронированы.</string>
+    <string name="OK">OK</string>
 </resources>

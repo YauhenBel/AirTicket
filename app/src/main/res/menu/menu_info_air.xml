@@ -2,19 +2,26 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".profile"
+    tools:context=".info_air"
     >
-<item
-    android:id="@+id/t_table"
-    android:orderInCategory="100"
-    android:title="@string/t_table"
-    app:showAsAction="never">
+    <item
+        android:id="@+id/prifile"
+        android:orderInCategory="100"
+        android:title="@string/profile"
+        app:showAsAction="never">
+    </item>
+    <item
+        android:id="@+id/t_table"
+        android:orderInCategory="100"
+        android:title="@string/t_table"
+        app:showAsAction="never">
     </item>
     <item
         android:id="@+id/information"
         android:orderInCategory="100"
         android:title="@string/information"
         app:showAsAction="never">
+
     </item>
     <item
         android:id="@+id/info_prog"

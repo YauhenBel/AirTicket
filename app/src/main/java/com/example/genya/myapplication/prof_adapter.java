@@ -1,6 +1,7 @@
 package com.example.genya.myapplication;
 
 import android.content.Context;
+import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,21 +10,21 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 /**
- * Created by Genya on 05.12.2016.
+ * Created by Genya on 12.01.2017.
  */
 
-public class TimeAdapter extends BaseAdapter {
-
+public class prof_adapter extends BaseAdapter {
     Context ctx;
     LayoutInflater lInflater;
     ArrayList<prof_tick> objects;
 
-    TimeAdapter(Context context, ArrayList<prof_tick> time_tabl) {
-        Log.i("TimeAdapter", "Конструктор");
+    prof_adapter(Context context, ArrayList<prof_tick> prof_tick) {
+        Log.i("prof_adapter", "Конструктор");
         ctx = context;
-        objects = time_tabl;
+        objects = prof_tick;
         lInflater = (LayoutInflater) ctx.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
@@ -31,49 +32,48 @@ public class TimeAdapter extends BaseAdapter {
     // кол-во элементов
     @Override
     public int getCount() {
-        Log.i("TimeAdapter", "Количество элементов");
+        Log.i("prof_adapter", "Количество элементов");
         return objects.size();
     }
 
     // элемент по позиции
     @Override
     public Object getItem(int position) {
-        Log.i("TimeAdapter", "Элементо по позиции");
+        Log.i("prof_adapter", "Элементо по позиции");
         return objects.get(position);
     }
 
     // id по позиции
     @Override
     public long getItemId(int position) {
-        Log.i("TimeAdapter", "id по позиции");
+        Log.i("prof_adapter", "id по позиции");
         return position;
     }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         // используем созданные, но не используемые view
-        Log.i("TimeAdapter", "public View getView");
+        Log.i("prof_adapter", "public View getView");
         View view = convertView;
         if (view == null) {
-            view = lInflater.inflate(R.layout.list, parent, false);
+            view = lInflater.inflate(R.layout.list_profile, parent, false);
         }
-        Log.i("TimeAdapter", "Time_Table p = getProduct");
+        Log.i("prof_adapter", "Time_Table p = getProduct");
         prof_tick p = getProduct(position);
 
         // заполняем View в пункте списка данными из товаров: наименование, цена
         // и картинка
-        ((TextView) view.findViewById(R.id.dest)).setText(p.depart);
-        ((TextView) view.findViewById(R.id.point_of_dest)).setText(p.arrived);
-        ((TextView) view.findViewById(R.id.date)).setText(p.date);
-        ((TextView) view.findViewById(R.id.cost_table)).setText(p.cost+"");
-        ((TextView) view.findViewById(R.id.id_fly)).setText(p.id_flight);
+        ((TextView) view.findViewById(R.id.id_flight)).setText(p.id_flight);
+        ((TextView) view.findViewById(R.id.num_seat)).setText(p.num_seat);
+        ((TextView) view.findViewById(R.id.name_class)).setText(p.name_class);
+
         Log.i("TimeAdapter", "заполняем View");
         return view;
     }
 
     // товар по позиции
-    prof_tick getProduct(int position) {
-        Log.i("TimeAdapter", "товар по позиции");
+    private prof_tick getProduct(int position) {
+        Log.i("prof_adapter", "товар по позиции");
         return ((prof_tick) getItem(position));
     }
 }

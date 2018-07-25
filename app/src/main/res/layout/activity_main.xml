@@ -40,6 +40,15 @@
         android:layout_above="@+id/button"
         android:layout_centerHorizontal="true" />
 
+    <Button
+        android:text="Регистрация"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:id="@+id/register"
+        android:onClick="register"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>

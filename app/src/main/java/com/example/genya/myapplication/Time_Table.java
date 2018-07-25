@@ -20,9 +20,9 @@ Time_Table(String _depart, String _arrived, String _date, Integer _cost, Integer
     id = _id;
 }
 
-    /*@Override
+    @Override
     public String toString() {
         return "Пункт вылета: "+depart+" Пункт прибытия: "+arrived+" Дата вылета: "+date+" Стоимость: "+cost+
                 " Номер рейса: "+id;
-    }*/
+    }
 }
